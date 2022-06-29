@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Отель Азария</title>
+    <link rel="stylesheet" href="/app/css/main.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            document.querySelector('body').classList.add('loading');
+            // document.querySelectorAll('[data-animations]').forEach(element => {
+            //     element.classList.add('animations')
+            // });;
+        }); 
+    </script>
+</head>
+<body>
+
+    <header class="header" >
+
+        <div class="header-top">
+            <div class="container">
+                <div class="content">
+    
+                    <a href="/" class="logo">
+                        <img src="/app/images/logo.svg" alt="">
+                    </a>
+
+                    <div class="address">
+                        <span class="address-icon">
+                            <svg><use xlink:href="/app/images/svg_sprite.svg#map"></use></svg>
+                        </span>
+                        <span class="address-text">Краснодарский край, <br>г. Геленджик, ул. Советская, 26</span>
+                    </div>
+
+                    <div class="phone">
+                        <a href="tel:8 (918) 623 91 52" class="phone-link">8 (918) 623 91 52</a>
+                        <span class="phone-text">Круглосуточно</span>
+                    </div>
+
+                    <a href="#" class="whatsapp">
+                        <span class="whatsapp-icon">
+                            <svg><use xlink:href="/app/images/svg_sprite.svg#whatsapp"></use></svg>
+                        </span>
+                    </a>
+
+                    <div class="button" data-open="form-callback">Забронировать</div>
+
+                    <button class="menu__toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="container">
+                <div class="content">
+
+                    <nav class="menu">
+                        <ul class="menu-list">
+                            <li class="menu-item active">
+                                <a href="#" class="menu-link">
+                                    Главная
+                                </a>
+                            </li>
+                            <li class="menu-item parent">
+                                <a href="#" class="menu-link">
+                                    Об отёле
+                                    <span class="arrow">
+                                        <svg><use xlink:href="/app/images/svg_sprite.svg#triangle"></use></svg>
+                                    </span>
+                                </a>
+                                <ul class="menu-list__inner">
+                                    <li class="menu-item"><a href="#">Двухместный «Полулюкс»</a></li>
+                                    <li class="menu-item"><a href="#">Трёхместный «Полулюкс»</a></li>
+                                    <li class="menu-item"><a href="#">Однокомнатный «Люкс»</a></li>
+                                    <li class="menu-item"><a href="#">Двухкомнатный «Люкс»</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">
+                                    Номера
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">
+                                    Галерея
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">
+                                    Акции
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-mobile">
+            <div class="wrap">
+                <nav class="menu">
+                    <ul class="menu-list">
+                        <li class="menu-item active">
+                            <a href="#" class="menu-link">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="menu-item parent">
+                            <a href="#" class="menu-link">
+                                Об отёле
+                                <span class="arrow">
+                                    <svg><use xlink:href="/app/images/svg_sprite.svg#triangle"></use></svg>
+                                </span>
+                            </a>
+                            <ul class="menu-list__inner">
+                                <li class="menu-item"><a href="#">Двухместный «Полулюкс»</a></li>
+                                <li class="menu-item"><a href="#">Трёхместный «Полулюкс»</a></li>
+                                <li class="menu-item"><a href="#">Однокомнатный «Люкс»</a></li>
+                                <li class="menu-item"><a href="#">Двухкомнатный «Люкс»</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">
+                                Номера
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">
+                                Галерея
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">
+                                Акции
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <a href="#" class="whatsapp">
+                    <span class="whatsapp-icon">
+                        <svg><use xlink:href="/app/images/svg_sprite.svg#whatsapp"></use></svg>
+                    </span>
+                </a>
+
+                <div class="phone">
+                    <a href="tel:8 (918) 623 91 52" class="phone-link">8 (918) 623 91 52</a>
+                    <span class="phone-text">Круглосуточно</span>
+                </div>
+
+                <div class="address">
+                    <span class="address-icon">
+                        <svg><use xlink:href="/app/images/svg_sprite.svg#map"></use></svg>
+                    </span>
+                    <span class="address-text">Краснодарский край, <br>г. Геленджик, ул. Советская, 26</span>
+                </div>
+
+                <div class="button" data-open="form-callback">Забронировать</div>
+
+            </div>
+        </div>
+    </header>
+
+    
+    <section class="card">
+        <div class="container">
+            <div class="content">
+                <div class="row">
+                    <div class="col-left">
+                        <div class="slider-top-wrap">
+                            <div class="slider-top">
+                                <a href="/app/images/informations1.jpg" class="image-wrapper">
+                                    <img src="/app/images/informations1.jpg" alt="">
+                                </a>
+                                <a href="/app/images/informations2.jpg" class="image-wrapper">
+                                    <img src="/app/images/informations2.jpg" alt="">
+                                </a>
+                                <a href="/app/images/form-desc.jpg" class="image-wrapper">
+                                    <img src="/app/images/form-desc.jpg" alt="">
+                                </a>
+                                <a href="/app/images/informations2.jpg" class="image-wrapper">
+                                    <img src="/app/images/informations2.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="slider-bottom">
+                            <div class="image-wrapper">
+                                <img src="/app/images/informations1.jpg" alt="">
+                            </div>
+                            <div class="image-wrapper">
+                                <img src="/app/images/informations2.jpg" alt="">
+                            </div>
+                            <div class="image-wrapper">
+                                <img src="/app/images/form-desc.jpg" alt="">
+                            </div>
+                            <div class="image-wrapper">
+                                <img src="/app/images/informations2.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-right">
+                        <h1 class="header_2">Двухместный «Полулюкс»</h1>
+                        
+                        <div class="text-default">
+                            <p>
+                            Отель «Азария» предлагает к вашему вниманию классическое решение:  Трёхместный «Полулюкс» 
+                            </p>
+                            <p>
+                            Стандартный номер обставлен изысканно и со вкусом классической мебелью удобной для проживания. 
+                            При небольших размерах комнаты, светлые тона делают её визуально просторной, а современный 
+                            дизайнерский интерьер по максимуму приближает вас к идеальным условиям комфорта. 
+                            </p>
+                            <p>
+                            Кровать оснащена удобным матрасом. В номере есть всё для уютного проживания: санузел, Wi-Fi, телевизор, кондиционер!
+                            </p>
+                            <p>
+                            Размещение в отеле «Азария» по системе: «Завтрак шведский стол» , а для вашего комфортного релакса и принятия ванн мы предлагаем 
+                            гостям отеля воспользоваться современным бассейном с подогревом и отдельной зоной для безопасного купания детей. 
+                            Сосредоточьтесь на отдыхе, позабыв обо всем!
+                            </p>
+                        </div>
+                        
+                        <!--
+                        <div class="price-wrap">
+                            <div class="price">от 8 170 000 руб.</div>
+                            <div class="old-price">8 170 000 руб.</div>
+                        </div>
+                        -->
+
+                        <div class="button-wrap">
+                            <button class="button-invert" data-open="form-callback">Забронировать</button>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="description">
+                    <h2 class="header_2">Информация</h2>
+                    <div class="description-row">
+                        <div class="description-left">
+                        
+                            <span><strong>Цена в рублях за номер  в сутки</strong></span>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>дата заезда</td>
+                                        <td>2 человека</td>
+                                        <td>3 человека</td>
+                                        <td>питание</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15.03-27.04</td>
+                                        <td>3800</td>
+                                        <td>4800</td>
+                                        <td>Завтрак</td>
+                                    </tr>
+                                    <tr>
+                                    <td>28.04-10.05</td>
+                                    <td>6500</td>
+                                    <td>8500</td>
+                                    <td>Завтрак</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11.05-31.05</td>
+                                        <td>5000</td>
+                                        <td>6500</td>
+                                        <td>Завтрак</td>
+                                    </tr>
+                                    <tr>
+                                        <td>01.06-30.06</td>
+                                        <td>6800</td>
+                                        <td>8800</td>
+                                        <td>Завтрак</td>
+                                    </tr>
+                                    <tr>
+                                        <td>01.07-31.08</td>
+                                        <td>8200</td>
+                                        <td>10700</td>
+                                        <td>Завтрак</td>
+                                    </tr>
+                                    <tr>
+                                        <td>01.09-30.09</td>
+                                        <td>6500</td>
+                                        <td>8500</td>
+                                        <td>Завтрак</td>
+                                    </tr>
+                                    <tr>
+                                        <td>01.10-15.10</td>
+                                        <td>5000</td>
+                                        <td>6500</td>
+                                        <td >Завтрак</td>
+                                    </tr>
+                                    <tr>
+                                    <td>16.10-29.12</td>
+                                        <td>3800</td>
+                                        <td>4800</td>
+                                        <td>Завтрак</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <p>
+                                - Дети от 0 до 3 лет включительно бесплатно<br>
+                                - Дети от 4 лет до взрослого согласно тарифам прайс листа
+                            </p>
+                            <p>
+                                <strong>Примечание.</strong> «Ранний заезд» с 08:00 до 14:00 или «поздний выезд» после 12:00 до 18:00 — доплата 50% от 
+                                стоимости номера за 1 сутки. В день с «ранним заездом» в 
+                                цену номера включён завтрак. В день с «поздним выездом» в цену номера включён  ужин.
+                            </p>
+                            <p>
+                                «Ранний заезд» и «поздний выезд» предоставляются по возможности.
+                            </p>
+
+                        </div>
+                    
+                        <div class="description-right">
+                            <h2>Включено в стоимость</h2>
+
+                            <ul>
+                                <li>Питание по системе Завтрак «Шведский стол»</li>
+                                <li>Открытый бассейн: подогреваемый бассейн с пресной водой, гейзером и водопадами;</li>
+                                <li>Прокат спортивный: велосипеды детские и взрослые, самокаты детские, мячи, шашки, настольные нарды, шахматы, бадминтон;</li>
+                                <li>Прокат для детей: кроватки, ванночки, коляски, детские стульчики в кафе.</li>
+                                <li>Круглосуточная стойка регистрации;</li>
+                                <li>Круглосуточный заказ такси;</li>
+                                <li>ТВ – цифровое, кабельное;</li>
+                                <li>Wi-Fi на всей территории отеля;</li>
+                                <li>Парковка (при наличии мест).</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="content">
+                <ul class="list">
+                    <li class="item item-logo">
+                        <a href="/" class="logo">
+                            <img src="/app/images/logo-footer.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="item item-address">
+                        <span class="item-address__icon">
+                            <svg><use xlink:href="/app/images/svg_sprite.svg#map"></use></svg>
+                        </span>
+                        <span class="item-address__text">
+                            Краснодарский край, г. <br>
+                            Геленджик, ул. Советская, 26
+                        </span>
+                    </li>
+                    <li class="item item-contact">
+                        <div class="item-contact__wrap">
+                            <a href="mailto:info@hotel-azaria.ru" class="item-contact__link">info@hotel-azaria.ru</a>
+                            <span class="item-contact__text">E-mail</span>
+                        </div>
+                        <div class="item-contact__wrap">
+                            <a href="tel:8 (86141) 2 15 10" class="item-contact__link">8 (86141) 2 15 10</a>
+                            <span class="item-contact__text">Телефон</span>
+                        </div>
+                    </li>
+                    <li class="item item-contact">
+                        <div class="item-contact__wrap">
+                            <a href="tel:8 (918) 623 91 52" class="item-contact__link">8 (918) 623 91 52</a>
+                            <span class="item-contact__text">Мобильный</span>
+                        </div>
+                        <div class="item-contact__wrap">
+                            <a href="tel:8 (86141) 2 15 10" class="item-contact__link">8 (86141) 2 15 10</a>
+                            <span class="item-contact__text">Факс</span>
+                        </div>
+                    </li>
+                    <li class="item item-button">
+                        <button class="button" data-open="form-callback">Забронировать</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <div class="container">
+            <div class="content">
+                <a href="#" class="text">Пользовательское соглашение</a>
+                <span class="text">Все права защищены. Copyright © 2012-2022</span>
+                <span class="text">Разрабоано студией <a href="https://web2.agency/" target="_blank">WEB2</a></span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="overlay" >
+        <div class="overlay__wrapper">
+            <div class="overlay__bg"></div>
+            <div class="overlay__content">
+                <a class="overlay__close"></a>
+
+                <form action="/" method="post" class="form form-callback novalid">
+                    <input type="hidden" name="count" value="0">
+                    <h3 class="header_2">Заказать звонок</h3>
+
+                    <div class="form-item">
+                        <input type="text" name="name" placeholder="имя" >
+                    </div>
+                    <div class="form-item">
+                        <input type="tel" name="phone" placeholder="телефон" >
+                    </div>
+                    <button class="button-invert">Отправить</button>
+                    <label class="form-note">
+                        <input type="checkbox" checked>
+                        <div class="custom-checkbox"></div>
+                        <div class="form-note-text">
+                            Принимаю условия <a href="#">Соглашения</a> на обработку <br>персональных данных
+                        </div>
+                    </label>
+                </form>
+
+                <div class="form-success">
+                    <div class="header_2">Спасибо!</div>
+                    <div class="">Ваши данные отправлены.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="scroll-top">
+        <svg><use xlink:href="/app/images/svg_sprite.svg#arrow"></use></svg>
+    </button>
+
+    <script src="/app/js/libs/jquery-3.3.1.min.js"></script>
+    <script src="/app/js/libs/slick.min.js"></script>
+    <script src="/app/js/libs/lightgallery-all.min.js"></script>
+    <script src="/app/js/libs/maskedinput-v.1.4.1.js"></script>
+    
+    <script src="/app/js/main.js"></script>
+</body>
+</html>

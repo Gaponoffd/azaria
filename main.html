@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <base href="/">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Отель Азария</title>
+    <link rel="stylesheet" href="/app/css/main.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            document.querySelector('body').classList.add('loading');
+            // document.querySelectorAll('[data-animations]').forEach(element => {
+            //     element.classList.add('animations')
+            // });;
+        }); 
+    </script>
+</head>
+<body>
+    <header class="header" >
+
+        <div class="header-top">
+            <div class="container">
+                <div class="content">
+    
+                    <a href="/" class="logo">
+                        <img src="/app/images/logo.svg" alt="">
+                    </a>
+
+                    <div class="address">
+                        <span class="address-icon">
+                            <svg><use xlink:href="/app/images/svg_sprite.svg#map"></use></svg>
+                        </span>
+                        <span class="address-text">Краснодарский край, <br>г. Геленджик, ул. Советская, 26</span>
+                    </div>
+
+                    <div class="phone">
+                        <a href="tel:8 (918) 623 91 52" class="phone-link">8 (918) 623 91 52</a>
+                        <span class="phone-text">Круглосуточно</span>
+                    </div>
+
+                    <a href="#" class="whatsapp">
+                        <span class="whatsapp-icon">
+                            <svg><use xlink:href="/app/images/svg_sprite.svg#whatsapp"></use></svg>
+                        </span>
+                    </a>
+
+                    <div class="button" data-open="form-callback">Забронировать</div>
+
+                    <button class="menu__toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="header-bottom">
+            <div class="container">
+                <div class="content">
+
+                    <nav class="menu">
+                        <ul class="menu-list">
+                            <li class="menu-item active">
+                                <a href="#" class="menu-link">
+                                    Главная
+                                </a>
+                            </li>
+                            <li class="menu-item parent">
+                                <a href="#" class="menu-link">
+                                    Об отёле
+                                    <span class="arrow">
+                                        <svg><use xlink:href="/app/images/svg_sprite.svg#triangle"></use></svg>
+                                    </span>
+                                </a>
+                                <ul class="menu-list__inner">
+                                    <li class="menu-item"><a href="#">Двухместный «Полулюкс»</a></li>
+                                    <li class="menu-item"><a href="#">Трёхместный «Полулюкс»</a></li>
+                                    <li class="menu-item"><a href="#">Однокомнатный «Люкс»</a></li>
+                                    <li class="menu-item"><a href="#">Двухкомнатный «Люкс»</a></li>
+                                </ul>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">
+                                    Номера
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">
+                                    Галерея
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">
+                                    Акции
+                                </a>
+                            </li>
+                            <li class="menu-item">
+                                <a href="#" class="menu-link">
+                                    Контакты
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-mobile">
+            <div class="wrap">
+                <nav class="menu">
+                    <ul class="menu-list">
+                        <li class="menu-item active">
+                            <a href="#" class="menu-link">
+                                Главная
+                            </a>
+                        </li>
+                        <li class="menu-item parent">
+                            <a href="#" class="menu-link">
+                                Об отёле
+                                <span class="arrow">
+                                    <svg><use xlink:href="/app/images/svg_sprite.svg#triangle"></use></svg>
+                                </span>
+                            </a>
+                            <ul class="menu-list__inner">
+                                <li class="menu-item"><a href="#">Двухместный «Полулюкс»</a></li>
+                                <li class="menu-item"><a href="#">Трёхместный «Полулюкс»</a></li>
+                                <li class="menu-item"><a href="#">Однокомнатный «Люкс»</a></li>
+                                <li class="menu-item"><a href="#">Двухкомнатный «Люкс»</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">
+                                Номера
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">
+                                Галерея
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">
+                                Акции
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#" class="menu-link">
+                                Контакты
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <a href="#" class="whatsapp">
+                    <span class="whatsapp-icon">
+                        <svg><use xlink:href="/app/images/svg_sprite.svg#whatsapp"></use></svg>
+                    </span>
+                </a>
+
+                <div class="phone">
+                    <a href="tel:8 (918) 623 91 52" class="phone-link">8 (918) 623 91 52</a>
+                    <span class="phone-text">Круглосуточно</span>
+                </div>
+
+                <div class="address">
+                    <span class="address-icon">
+                        <svg><use xlink:href="/app/images/svg_sprite.svg#map"></use></svg>
+                    </span>
+                    <span class="address-text">Краснодарский край, <br>г. Геленджик, ул. Советская, 26</span>
+                </div>
+
+                <div class="button" data-open="form-callback">Забронировать</div>
+
+            </div>
+        </div>
+    </header>
+
+    
+    <section class="main">
+        <div class="container">
+            <div class="content">
+                <div class="text-default">
+                    <h1>О нас</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur facere consequuntur fuga dolor dolorum, 
+                        earum quod repellat ipsum harum, voluptatum sed eveniet perspiciatis at omnis id delectus necessitatibus quisquam voluptates?
+                    </p>
+                    <p>
+                        Fuga mollitia recusandae asperiores, <a href="#">qui tenetur</a> sint sapiente culpa quis? Laborum recusandae et 
+                        porro optio amet dolorum labore vero incidunt cum repellat ea nemo alias vitae eveniet voluptates, eos ipsum!
+                        Consequatur recusandae cumque alias a nam, ab reiciendis quisquam incidunt, adipisci consequuntur 
+                    </p>
+                    <p>
+                        illum expedita <a href="#">blanditiis</a> accusamus debitis inventore ex iure possimus, atque fugit! Natus praesentium ullam, repudiandae culpa accusantium corporis!
+                        Culpa exercitationem fugit beatae molestias ratione maxime laudantium harum asperiores illo 
+                        perferendis dolorem reprehenderit, eos necessitatibus, provident delectus molestiae atque eius nobis? 
+                        Commodi temporibus sequi consequuntur excepturi enim recusandae ducimus!
+                    </p>
+                    <ul>
+                        <li>Пункт 1</li>
+                        <li>Пункт 2</li>
+                        <li>Пункт 3</li>
+                        <li>Пункт 4</li>
+                        <li>Пункт 5</li>
+                    </ul>
+                    <p>&nbsp;</p>
+                    <h2>Заголовок 2</h2>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga ipsa dignissimos quae! Corrupti, 
+                        nam fugit. Accusamus consequatur, hic voluptatibus cumque cupiditate nulla praesentium quas qui ab corrupti! Dolorum, deleniti debitis?
+                    </p>
+                    <ol>
+                        <li>Пункт 1</li>
+                        <li>Пункт 2</li>
+                        <li>Пункт 3</li>
+                        <li>Пункт 4</li>
+                        <li>Пункт 5</li>
+                    </ol>
+                    <p>&nbsp;</p>
+                    <h3>Заголовок 3</h3>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga ipsa dignissimos quae! Corrupti, 
+                        nam fugit. Accusamus consequatur, hic voluptatibus cumque cupiditate nulla praesentium quas qui ab corrupti! Dolorum, deleniti debitis?
+                    </p>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga ipsa dignissimos quae! Corrupti, 
+                        nam fugit. Accusamus consequatur, hic voluptatibus cumque cupiditate nulla praesentium quas qui ab corrupti! Dolorum, deleniti debitis?
+                    </p>
+
+                    <div class="gallery-item">
+                        <a href="/app/images/informations1.jpg">
+                            <img src="/app/images/informations1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="/app/images/informations2.jpg">
+                            <img src="/app/images/informations2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="/app/images/informations1.jpg">
+                            <img src="/app/images/informations1.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="/app/images/informations2.jpg">
+                            <img src="/app/images/informations2.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="/app/images/form-desc.jpg">
+                            <img src="/app/images/form-desc.jpg" alt="">
+                        </a>
+                    </div>
+                    <div class="gallery-item">
+                        <a href="/app/images/informations1.jpg">
+                            <img src="/app/images/informations1.jpg" alt="">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="content">
+                <ul class="list">
+                    <li class="item item-logo">
+                        <a href="/" class="logo">
+                            <img src="/app/images/logo-footer.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="item item-address">
+                        <span class="item-address__icon">
+                            <svg><use xlink:href="/app/images/svg_sprite.svg#map"></use></svg>
+                        </span>
+                        <span class="item-address__text">
+                            Краснодарский край, г. <br>
+                            Геленджик, ул. Советская, 26
+                        </span>
+                    </li>
+                    <li class="item item-contact">
+                        <div class="item-contact__wrap">
+                            <a href="mailto:info@hotel-azaria.ru" class="item-contact__link">info@hotel-azaria.ru</a>
+                            <span class="item-contact__text">E-mail</span>
+                        </div>
+                        <div class="item-contact__wrap">
+                            <a href="tel:8 (86141) 2 15 10" class="item-contact__link">8 (86141) 2 15 10</a>
+                            <span class="item-contact__text">Телефон</span>
+                        </div>
+                    </li>
+                    <li class="item item-contact">
+                        <div class="item-contact__wrap">
+                            <a href="tel:8 (918) 623 91 52" class="item-contact__link">8 (918) 623 91 52</a>
+                            <span class="item-contact__text">Мобильный</span>
+                        </div>
+                        <div class="item-contact__wrap">
+                            <a href="tel:8 (86141) 2 15 10" class="item-contact__link">8 (86141) 2 15 10</a>
+                            <span class="item-contact__text">Факс</span>
+                        </div>
+                    </li>
+                    <li class="item item-button">
+                        <button class="button" data-open="form-callback">Забронировать</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <div class="container">
+            <div class="content">
+                <a href="#" class="text">Пользовательское соглашение</a>
+                <span class="text">Все права защищены. Copyright © 2012-2022</span>
+                <span class="text">Разрабоано студией <a href="https://web2.agency/" target="_blank">WEB2</a></span>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="overlay" >
+        <div class="overlay__wrapper">
+            <div class="overlay__bg"></div>
+            <div class="overlay__content">
+                <a class="overlay__close"></a>
+
+                <form action="/" method="post" class="form form-callback novalid">
+                    <input type="hidden" name="count" value="0">
+                    <h3 class="header_2">Заказать звонок</h3>
+
+                    <div class="form-item">
+                        <input type="text" name="name" placeholder="имя" >
+                    </div>
+                    <div class="form-item">
+                        <input type="tel" name="phone" placeholder="телефон" >
+                    </div>
+                    <button class="button-invert">Отправить</button>
+                    <label class="form-note">
+                        <input type="checkbox" checked>
+                        <div class="custom-checkbox"></div>
+                        <div class="form-note-text">
+                            Принимаю условия <a href="#">Соглашения</a> на обработку <br>персональных данных
+                        </div>
+                    </label>
+                </form>
+
+                <div class="form-success">
+                    <div class="header_2">Спасибо!</div>
+                    <div class="">Ваши данные отправлены.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="scroll-top">
+        <svg><use xlink:href="/app/images/svg_sprite.svg#arrow"></use></svg>
+    </button>
+
+    <script src="/app/js/libs/jquery-3.3.1.min.js"></script>
+    <script src="/app/js/libs/slick.min.js"></script>
+    <script src="/app/js/libs/lightgallery-all.min.js"></script>
+    <script src="/app/js/libs/maskedinput-v.1.4.1.js"></script>
+    
+    <script src="/app/js/main.js"></script>
+</body>
+</html>
