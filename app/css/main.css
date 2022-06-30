@@ -261,7 +261,6 @@ input[type='number'] {
       font-size: 14px; } }
   @media only screen and (max-width: 767px) {
     .button-invert {
-      width: 100%;
       font-size: 12px; } }
 
 .button.center,
@@ -376,7 +375,7 @@ input[type='number'] {
     font-weight: 700; }
   .text-default td {
     border: 1px solid #2B2B2A;
-    padding: 10px; }
+    padding: 4px 2px; }
 
 .image-wrapper {
   font-size: 0;
@@ -2137,7 +2136,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
               -ms-transform: rotate(0);
                   transform: rotate(0); }
         .menu-mobile .menu-item a {
-          font-weight: 700;
+          font-weight: 600;
           font-size: 18px;
           color: #fff; }
         .menu-mobile .menu-item ul {
@@ -2202,7 +2201,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       .menu-mobile .phone-link {
         display: block;
         font-size: 16px;
-        font-weight: 800;
+        font-weight: 600;
         -webkit-transition: all 0.2s;
         -o-transition: all 0.2s;
         transition: all 0.2s; }
@@ -3094,8 +3093,6 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       padding: 40px 0 80px 0; }
       .main .content {
         width: 100%; }
-      .main .header_1 {
-        font-size: 40px; }
       .main .gallery-item {
         width: calc(50% - 8px); }
         .main .gallery-item img {
@@ -3108,11 +3105,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
       .main .text-default img {
         width: 100%;
         height: auto;
-        margin: 20px 0 !important;
+        margin: 0 0 20px 0 !important;
         float: none; } }
-  @media only screen and (max-width: 399px) {
-    .main .header_1 {
-      font-size: 26px; } }
 
 .card {
   margin-top: 80px;
@@ -3441,13 +3435,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
         width: 100%;
         margin-bottom: 40px; }
       .card .description-right {
-        width: 100%; } }
-  @media only screen and (max-width: 767px) {
-    .card {
-      margin-top: 40px;
-      margin-bottom: 60px; }
-      .card .slider-top-wrap {
-        margin-bottom: 6px; }
+        width: 100%; }
       .card .header_2.mob {
         display: block; }
       .card .col-right .header_2 {
@@ -3458,7 +3446,13 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
         display: none; }
       .card .button-wrap.mob {
         display: block;
-        margin-bottom: 30px; }
+        margin-bottom: 30px; } }
+  @media only screen and (max-width: 767px) {
+    .card {
+      margin-top: 40px;
+      margin-bottom: 60px; }
+      .card .slider-top-wrap {
+        margin-bottom: 6px; }
       .card .description {
         margin-top: 0; } }
   @media only screen and (max-width: 500px) {

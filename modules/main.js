@@ -307,10 +307,10 @@ $(function(){
         flag = false
     })
 
-    $('.menu-mobile .menu-item.parent').on('click',function(){
+    $('.menu-mobile .menu-item.parent > a').on('click',function(){
         let $this = $(this);
-        $this.toggleClass('open')
-        $this.children('ul').slideToggle()
+        $this.parent().toggleClass('open')
+        $this.next('ul').slideToggle()
     })
 
 });
