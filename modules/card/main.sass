@@ -6,6 +6,14 @@
     .row
         display: flex
 
+    .header_2
+        &.mob
+            display: none
+    
+    .button-wrap 
+        &.mob
+            display: none
+
     .col-left
         width: 50%
         padding-right: 4vw
@@ -69,8 +77,8 @@
         width: 50%
         //margin-top: 80px
 
-    .header_2
-        margin-bottom: 30px
+        .header_2
+            margin-bottom: 30px
 
     .vendor
         margin-bottom: 16px
@@ -82,7 +90,6 @@
 
     .options
         margin-bottom: 94px
-
 
     .option
         margin-bottom: 24px
@@ -365,8 +372,41 @@
         .description-right
             width: 100%
     
+    
+    +phone
+        margin-top: 40px
+        margin-bottom: 60px
+
+        .slider-top-wrap
+            margin-bottom: 6px
+
+
+        .header_2
+            &.mob
+                display: block
+
+        .col-right
+            .header_2
+                display: none
+
+            .header_2
+                &.mob
+                    display: block
+
+        .button-wrap
+            display: none
+        
+        .button-wrap 
+            &.mob
+                display: block
+                margin-bottom: 30px
+        
+        .description
+            margin-top: 0
+
 
     +max(500px)
+        margin-bottom: 40px
 
         .button-wrap
             flex-wrap: wrap

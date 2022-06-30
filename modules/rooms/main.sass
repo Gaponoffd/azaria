@@ -69,6 +69,9 @@
         flex-shrink: 0
         width: 750px
 
+        .block-info
+            display: none
+
     .result-header
         display: flex
         justify-content: space-between
@@ -136,7 +139,9 @@
             fill: #fff
             transition: all 0.4s
 
-
+    .button-invert
+        .link-more
+            display: none
 
 
     .slider-navbar
@@ -198,7 +203,10 @@
             -webkit-transition: all .4s
             transition: all .4s
             will-change: transform
-    
+
+    .results-arrow_wrapper
+        display: none
+
     +medium
         .col-right
             width: 60%
@@ -266,6 +274,23 @@
                 height: 64vw
 
     +phone
+        .link-more
+            display: none
+
+        .results
+            box-shadow: 0 2px 4px rgba(0, 0, 0, .2)
+
+        .col-right
+            position: relative
+            margin-top: 0
+
+            .block-info
+                display: block
+        
+        .col-left
+            .block-info
+                display: none
+
         .item-tab
             padding: 8px 4px
             width: 50%
@@ -275,10 +300,12 @@
 
         .result-header
             flex-wrap: wrap
+            padding: 4px
 
         .result-text-wrap
             width: 100%
             margin-bottom: 20px
+            margin-top: 20px
 
         .link-more__text
             font-size: 12px
@@ -286,3 +313,82 @@
         .link-more__icon
             width: 40px
             height: 40px
+
+        .list-tab
+            display: none
+        
+        .result
+            display: flex
+            flex-direction: column-reverse
+
+        .slider-navbar
+            margin: 16px 0
+            padding: 0 4px
+
+        .slick-dots
+            position: absolute
+            left: 50%
+            transform: translateX(-50%)
+            margin-top: 24px
+
+            > li
+                > button
+                    font-size: 0
+                    height: 14px
+                    width: 14px
+                    background-color: $color__1
+                    border-radius: 50%
+        
+        .slider-navbar 
+            .arrow
+                width: 22px
+                height: 22px
+                &.prev
+                    margin-right: 10px
+
+        .button_wrapper
+            display: flex
+            align-items: center
+            justify-content: space-between
+            width: 100%
+
+            .link-more
+                display: block
+                position: relative
+                bottom: 0
+            
+            .link-more__text
+                color: $color__4
+            
+            .link-more__icon
+                border: 1px solid $color__4
+                
+                svg
+                    fill: $color__4
+
+
+    // +max(500px)
+    //     .button_wrapper
+    //         .link-more
+    //             padding-left: 10px
+    //             right: 0
+
+    //         .link-more__icon
+    //             margin-left: 2px
+    //             width: 26px
+    //             height: 26px
+    //             svg 
+    //                 width: 12px
+    //                 height: 12px
+    
+    +max(480px)
+        .button_wrapper
+            position: relative
+            flex-direction: column
+        
+            .button-invert
+                width: 100%
+                margin-bottom: 20px
+            
+            .link-more
+                right: -2%

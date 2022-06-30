@@ -113,6 +113,7 @@
 
         <div class="menu-mobile">
             <div class="wrap">
+                <div class="button" data-open="form-callback">Забронировать</div>
                 <nav class="menu">
                     <ul class="menu-list">
                         <li class="menu-item">
@@ -174,8 +175,6 @@
                     </span>
                     <span class="address-text">Краснодарский край, <br>г. Геленджик, ул. Советская, 26</span>
                 </div>
-
-                <div class="button" data-open="form-callback">Забронировать</div>
 
             </div>
         </div>
@@ -333,21 +332,34 @@
                                     <div class="result-title">Двухместный «Полулюкс»</div>
                                     <div class="result-count">Количество человек: до 2</div>
                                 </div>
-                                <button class="button-invert">Забронировать номер</button>
+                                <div class="block-info">
+                                    В стоимость проживания для всех типов 
+                                    номеров входит завтрак по системе 
+                                    “Шведский стол” и посещение бассейна
+                                </div>
+                                <div class="button_wrapper">
+                                    <button class="button-invert">Забронировать номер</button>
+                                    <div class="link-more">
+                                        <span class="link-more__text">подробней</span>
+                                        <span class="link-more__icon">
+                                            <svg><use xlink:href="/app/images/svg_sprite.svg#arrow"></use></svg>
+                                        </span>
+                                    </div>
+                                </div>
                             </div>
                             <div class="slider-wrap">
                                 <div class="slider">
                                     <a href="/app/images/room1.jpg" class="image-wrapper">
-                                        <img data-lazy="/app/images/room1.jpg" alt="room">
+                                        <img src="/app/images/room1.jpg" alt="room">
                                     </a>
                                     <a href="/app/images/room1.jpg" class="image-wrapper">
-                                        <img data-lazy="/app/images/room1.jpg" alt="room">
+                                        <img src="/app/images/room1.jpg" alt="room">
                                     </a>
                                     <a href="/app/images/room1.jpg" class="image-wrapper">
-                                        <img data-lazy="/app/images/room1.jpg" alt="room">
+                                        <img src="/app/images/room1.jpg" alt="room">
                                     </a>
                                     <a href="/app/images/room1.jpg" class="image-wrapper">
-                                        <img data-lazy="/app/images/room1.jpg" alt="room">
+                                        <img src="/app/images/room1.jpg" alt="room">
                                     </a>
                                 </div>
                                 <div class="link-more">
@@ -386,13 +398,13 @@
                             <div class="slider-wrap">
                                 <div class="slider">
                                     <a href="/app/images/room1.jpg" class="image-wrapper">
-                                        <img data-lazy="/app/images/room1.jpg" alt="room">
+                                        <img src="/app/images/room1.jpg" alt="room">
                                     </a>
                                     <a href="/app/images/room1.jpg" class="image-wrapper">
-                                        <img data-lazy="/app/images/room1.jpg" alt="room">
+                                        <img src="/app/images/room1.jpg" alt="room">
                                     </a>
                                     <a href="/app/images/room1.jpg" class="image-wrapper">
-                                        <img data-lazy="/app/images/room1.jpg" alt="room">
+                                        <img src="/app/images/room1.jpg" alt="room">
                                     </a>
                                 </div>
                                 <div class="link-more">
@@ -431,13 +443,13 @@
                             <div class="slider-wrap">
                                 <div class="slider">
                                     <a href="/app/images/room1.jpg" class="image-wrapper">
-                                        <img data-lazy="/app/images/room1.jpg" alt="room">
+                                        <img src="/app/images/room1.jpg" alt="room">
                                     </a>
                                     <a href="/app/images/room1.jpg" class="image-wrapper">
-                                        <img data-lazy="/app/images/room1.jpg" alt="room">
+                                        <img src="/app/images/room1.jpg" alt="room">
                                     </a>
                                     <a href="/app/images/room1.jpg" class="image-wrapper">
-                                        <img data-lazy="/app/images/room1.jpg" alt="room">
+                                        <img src="/app/images/room1.jpg" alt="room">
                                     </a>
                                 </div>
                                 <div class="link-more">
@@ -476,13 +488,13 @@
                             <div class="slider-wrap">
                                 <div class="slider">
                                     <a href="/app/images/room1.jpg" class="image-wrapper">
-                                        <img data-lazy="/app/images/room1.jpg" alt="room">
+                                        <img src="/app/images/room1.jpg" alt="room">
                                     </a>
                                     <a href="/app/images/room1.jpg" class="image-wrapper">
-                                        <img data-lazy="/app/images/room1.jpg" alt="room">
+                                        <img src="/app/images/room1.jpg" alt="room">
                                     </a>
                                     <a href="/app/images/room1.jpg" class="image-wrapper">
-                                        <img data-lazy="/app/images/room1.jpg" alt="room">
+                                        <img src="/app/images/room1.jpg" alt="room">
                                     </a>
                                 </div>
                                 <div class="link-more">
@@ -658,7 +670,7 @@
             <div class="overlay__content">
                 <a class="overlay__close"></a>
 
-                <form action="/" method="post" class="form form-callback novalid">
+                <form class="form form-callback novalid">
                     <input type="hidden" name="count" value="0">
                     <h3 class="header_2">Заказать звонок</h3>
 

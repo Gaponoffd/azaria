@@ -1,3 +1,10 @@
+$(document).ready(function() {
+	// отключаем стандартное сообщение AjaxForm
+	if (typeof(AjaxForm) != 'undefined') {
+		AjaxForm.Message.success = function() {};
+	}
+});
+
 // rooms
 $(function(){
 
@@ -32,6 +39,16 @@ $(function(){
         swipe: false,
         fade: true,
         arrows: false,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    dots: true,
+                    fade: false,
+                    swipe: false,
+                }
+            }
+        ]
     });
 
     // После переключения слайдера
