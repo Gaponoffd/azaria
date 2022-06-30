@@ -28,6 +28,14 @@ $(function(){
         slidesToScroll: 1,
         swipe: true,
         arrows: false,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    swipe: false,
+                }
+            }
+        ]
     });
 
     $('.rooms .results').slick({
@@ -45,7 +53,7 @@ $(function(){
                 settings: {
                     dots: true,
                     fade: false,
-                    swipe: false,
+                    swipe: true,
                 }
             }
         ]

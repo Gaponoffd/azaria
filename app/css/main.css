@@ -2189,7 +2189,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
         display: -ms-inline-flexbox;
         display: inline-flex;
         width: 20px;
-        height: 24px; }
+        height: 24px;
+        margin-right: 4px; }
         .menu-mobile .address-icon svg {
           fill: #fff; }
       .menu-mobile .address-text {
