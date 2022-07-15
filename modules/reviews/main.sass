@@ -1,0 +1,185 @@
+.reviews
+    padding: 40px 0 120px 0
+    min-height: 32vh
+
+    .header_2
+        margin-bottom: 60px
+        font-size: 60px
+        +large
+            margin-bottom: calc( 20px + 40 * (100vw / 1920) )
+            font-size: calc( 26px + 34 * (100vw / 1920) )
+
+    .form_wrapper
+        margin-bottom: 20px
+
+    .reviews__list
+        margin-bottom: 24px
+
+    .reviews__item
+        border: 1px solid $color__1
+        margin-bottom: 14px
+        padding: 10px
+    
+    .reviews__item_title
+        margin-bottom: 6px
+
+    .name
+        font-size: 24px
+        font-weight: 400
+        margin-right: 4px
+    
+    .date
+        color: $color__3
+    
+
+    .form-title
+        margin-bottom: 20px
+
+    .form_wrapper
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+    
+    .contacts
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+
+        width: 35%
+
+    .comment
+        width: 60%
+
+    .form__item
+        position: relative
+
+        &.last
+            margin-bottom: 0
+
+        input
+            border: none
+            outline: none
+            width: 100%
+            height: 60px
+            font-size: 16px
+            color: $color__1
+            font-family: $font-family__1
+            padding: 0px 20px
+            background: transparent
+            border: 1px solid rgba($color__1, 0.5)
+
+            &::-webkit-input-placeholder
+                color: rgba($color__1, 0.7)
+            
+            &::-moz-placeholder
+                color: rgba($color__1, 0.7)
+            
+            &:-ms-input-placeholder
+                color: rgba($color__1, 0.7)
+            
+            &:-moz-placeholder
+                color: rgba($color__1, 0.7)
+
+        &.com
+            border: 1px solid rgba($color__1, 0.5)
+
+        textarea
+            border: none
+            outline: none
+            resize: none
+            width: 100%
+            height: 100%
+            max-height: 140px
+            font-size: 14px
+            color: $color__1
+            font-family: $font-family__1
+            padding: 20px 20px
+            background: transparent
+
+            &::-webkit-input-placeholder
+                color: rgba($color__1, 0.7)
+            
+            &::-moz-placeholder
+                color: rgba($color__1, 0.78)
+            
+            &:-ms-input-placeholder
+                color: rgba($color__1, 0.7)
+            
+            &:-moz-placeholder
+                color: rgba($color__1, 0.7)
+
+
+        label
+            width: 100%
+            height: 100%
+            position: absolute
+            z-index: 2
+            display: block
+            color: #ffffff
+            font-weight: 400
+            font-size: 18px
+            font-family: $font-family__1
+            transition: 0.3s
+    
+    .button_wrapper
+        display: flex
+        justify-content: end
+        
+    .pagination
+        display: flex
+        justify-content: center
+        align-items: center
+        margin-bottom: 40px!important
+
+        .page-item
+            margin: 0 4px
+            list-style: none
+
+            &.active
+                font-weight: 600
+                color: $color__4
+        
+        .page-link
+            font-size: 24px
+            transition: color .2s
+
+            &:hover
+                color: $color__2
+
+        .control
+            > a
+                margin: 0 4px
+                color: $color__1
+                font-size: 28px
+                transition: color .2s
+
+            &:hover
+                color: $color__2
+
+    +phone
+        padding: 40px 0
+        .form_wrapper
+            // flex-direction: column
+
+        .contacts
+            width: 100%
+
+        .comment
+            width: 100%
+
+        .form__item
+            margin-bottom: 20px
+        
+        .name
+            font-size: 20px
+
+        .form__item
+            input
+                height: 50px
+        
+        .button_wrapper
+            justify-content: center
+        
+        .button-invert
+            width: 100%
+        
